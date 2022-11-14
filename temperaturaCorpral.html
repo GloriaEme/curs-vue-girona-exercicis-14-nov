@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex.Tmperatura Corporal</title>
+</head>
+<body>
+    <h1>
+        Temperatura Corporal
+    </h1>
+    
+</body>
+<script>
+
+    //Segons temperatura corporal 
+    //escriu per pantalla
+    //menys de 35 graus escriu "perill"
+    //entre 35 i 36.5 graus escriu "no te febre"
+    //entre 36.5 i 38 "té força febre"
+    //Més de 38 "té molta febre"
+
+/* var a=35
+var b=38
+
+var febrePerill= a>35
+console.log("perill")
+
+febre > 35.0 && febre <36.5  */
+//&& AND si la fiebre es menor(>)35 && (Y) mayor (>)36.5
+
+var febre= 36.7
+
+if(febre>35){
+    console.log("Perill")
+ }
+else if(febre > 35 && febre < 36.5){
+    console.log("No te febre")
+ }
+
+else if(febre > 36.5 && febre < 38){
+     console.log("Te força febre")
+
+ }
+ else{
+    console.log("te molta febre")
+ }
+
+
+ //hacer funcion y imprimir
+
+
+
+ function calcularFebre(febre){
+    if(febre>35){
+    console.log("Perill")
+ }
+else if(febre > 35 && febre < 36.5){
+    console.log("No te febre")
+ }
+
+else if(febre > 36.5 && febre < 38){
+     console.log("Te força febre")
+
+ }
+ else{
+    console.log("te molta febre")
+ }
+
+ }
+ calcularFebre(30)
+ calcularFebre(35.7)
+ calcularFebre(37.8)
+ calcularFebre(41)
+
+ var pacients=  [34.5,42.35,39.0,36.7]
+
+
+
+</script>
+</html>
