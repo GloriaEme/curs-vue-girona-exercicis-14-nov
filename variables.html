@@ -26,6 +26,38 @@
     // del parell de variables
     console.log("els enters sumen",enter1+enter2)
     
+    var sumaDecimals = decimal1 + decimal2
+    console.log("els decimals sumen",sumaDecimals)
+
+    // Fer una funcio 
+    // - 1 parametre d'entrada o argument 
+    // Ens diu de quin tipus es i imprimeix el valor de l'argument
+
+    // definim funcio
+    function tipusDeVariable(entrada){
+        console.log(
+            "La variable d'entrada és del tipus "
+            + typeof(entrada)
+            + " i té el valor "
+            + entrada
+            )
+    }
+
+    // invoquem la funcio
+    tipusDeVariable("hola")
+    tipusDeVariable(enter1)
+    tipusDeVariable(decimal1)
+    tipusDeVariable()
+    tipusDeVariable({})
+    tipusDeVariable([])
+    
+    // Fer 4 funcions, la de sumar, restar, multiplicar i dividir 
+    // i probar-les.
+
+    function suma(a,b){
+        return a+b
+    }
+
     
  </script>
 </html>
