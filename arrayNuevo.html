@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+       Array nou 
+
+    </h1>
+    
+</body>
+
+
+<script>
+
+    var noms=[]
+    noms.push("Jordi")
+    noms.push("Eva")
+    noms.push("Dani")
+    noms.push("Pere")
+    noms.push("Alba")
+    noms.push("Margarita")
+
+    //Escriu quans caracters te cada nom
+    //i el nom en un for i despres en foreach
+
+    console.log(noms)
+
+    //FOR
+
+    for(var posicioDelNom=0; posicioDelNom< noms.length; posicioDelNom++){
+
+         
+        //Agafem valor
+        var nomActual= noms[posicioDelNom]
+
+
+        //Comtem caracters
+        var nombreDeCaracters=nomActual.length
+
+        console.log( "El nom " + nomActual +" té " + nombreDeCaracters + " caràcters")
+    }
+
+    //ForEACH
+    noms.forEach((el,pos,arr)=>{
+        console.log(el)
+    })
+
+    
+ 
+
+    
+
+
+
+</script>
+</html>

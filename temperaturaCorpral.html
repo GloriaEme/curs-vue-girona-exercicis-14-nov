@@ -52,21 +52,21 @@ else if(febre > 36.5 && febre < 38){
 
 
 
- function calcularFebre(febre){
-    if(febre>35){
+ function calcularFebre(febre1){
+    if(febre1>35){
     console.log("Perill")
- }
-else if(febre > 35 && febre < 36.5){
+    }
+    else if(febre1 > 35 && febre1 < 36.5){
     console.log("No te febre")
- }
+       }
 
-else if(febre > 36.5 && febre < 38){
+    else if(febre1 > 36.5 && febre1 < 38){
      console.log("Te força febre")
 
  }
- else{
+    else{
     console.log("te molta febre")
- }
+     }
 
  }
  calcularFebre(30)
@@ -74,7 +74,40 @@ else if(febre > 36.5 && febre < 38){
  calcularFebre(37.8)
  calcularFebre(41)
 
+
+
+
+
  var pacients=  [34.5,42.35,39.0,36.7]
+
+for( var posicio=0;posicio <pacients.length;posicio++){    //agafem el valor posicio actualç
+     var febrePacient=pacients[posicio]
+    console.log(
+        "La febre del pacient "
+        +posicio
+        +"és"
+        +febrePacient
+        )
+    calcularFebre(febrePacient)
+
+    }
+
+console.clear()
+
+
+    console.log("apunt fer forEach")
+
+    //ARRAY (pacients)  .forEach  (POR CADA UNO DE LOS VALORES)
+
+    pacients.forEach(calcularFebre)
+
+    pacients.forEach(    
+        function(elValor,posicio,el_array){
+            calcularFebre(elValor,posicio,el_array)
+        }
+    )
+
+
 
 
 
