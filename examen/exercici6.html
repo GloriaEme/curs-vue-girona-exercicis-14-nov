@@ -1,0 +1,56 @@
+<!--
+    Pregunta 6
+    1-Crear un array amb 6 noms i imprimir el valor de cada un (no cal fer-ho amb loop)
+-->
+
+<h1>
+    ARRAY 6 NOMS
+</h1>
+
+<script>
+
+    var noms=[]
+    noms.push("Jordi")
+    noms.push("Eva")
+    noms.push("Dani")
+    noms.push("Pere")
+    noms.push("Alba")
+    noms.push("Margarita")
+
+
+    console.log(noms)
+
+    // imprimir el valor de cada un (no cal fer-ho amb loop)
+
+    console.log(noms[0])
+    console.log(noms[1])
+    console.log(noms[2])
+    console.log(noms[3])
+    console.log(noms[4])
+    console.log(noms[6])
+
+    console.log("-------------------")
+  
+
+
+  for(var i=0;i <noms.length;i++){
+    var elementActual =noms[i]
+    console.log(elementActual)
+
+    console.log("-------------------")
+
+    console.log(noms[i])
+  }
+  //ForEACH
+
+  console.log("-------------------")
+  
+
+  noms.forEach(function(el){
+
+    console.log(el)
+  })
+        
+
+   
+    </script>
